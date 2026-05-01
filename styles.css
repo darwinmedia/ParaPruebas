@@ -1,0 +1,38 @@
+body {
+  margin:0;
+  font-family: Arial;
+  background:#111;
+  color:white;
+}
+
+header {
+  display:flex;
+  justify-content:space-between;
+  padding:15px;
+  background:#000;
+}
+
+nav a {
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+.hero {
+  text-align:center;
+  padding:40px;
+}
+
+iframe {
+  width:100%;
+  max-width:600px;
+  height:120px;
+  border:none;
+  margin-top:20px;
+}
+
+#contador-visitas {
+  margin-top:20px;
+  font-size:18px;
+  color:#00ff99;
+}
