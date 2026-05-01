@@ -4,42 +4,62 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Radio Estereo Color | En Vivo 24/7</title>
+<title>Radio Estereo Color | App Oficial</title>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-  <div class="logo">🎙 Radio Estereo Color</div>
-  <nav>
-    <a href="#">Inicio</a>
-    <a href="#">En Vivo</a>
-    <a href="#">Programación</a>
-    <a href="#">Contacto</a>
-  </nav>
-</header>
+<!-- 📦 CONTENEDOR CENTRAL (IMPORTANTE) -->
+<div class="app-container">
 
-<section class="hero">
-  <h1>Escucha en Vivo 24/7</h1>
+  <!-- 🔴 TOP BAR -->
+  <header class="topbar">
+    <div class="logo">🎙 REC LIVE</div>
+    <div class="status">🔴 ON AIR</div>
+  </header>
 
-  <!-- 🎧 TU RADIO -->
-  <iframe src="play_darwin/ColorPlay.html"></iframe>
+  <!-- 🎧 PLAYER -->
+  <div class="player-bar">
+    <button id="playBtn">▶ Play</button>
 
-  <div id="contador-visitas">Cargando visitas...</div>
-</section>
+    <div class="now-playing">
+      Radio Estereo Color - En Vivo 24/7
+    </div>
 
-<section class="info">
-  <h2>Somos Radio Estereo Color</h2>
-  <p>Transmitiendo música, entretenimiento y cultura para el mundo.</p>
-</section>
+    <div id="listeners">🌍 Señal activa</div>
+  </div>
 
-<footer>
-  <p>© 2026 Radio Estereo Color</p>
-</footer>
+  <!-- 🔥 HERO -->
+  <section class="hero">
+    <h1>Radio Estereo Color</h1>
+    <p>Transmitiendo desde Honduras para el mundo</p>
 
+    <!-- 📊 CONTADOR -->
+    <div id="visitas">Cargando visitas...</div>
+  </section>
+
+  <!-- 💬 CHAT -->
+  <section class="chat">
+    <iframe src="https://www3.cbox.ws/box/?boxid=3519381&boxtag=MvJDBl"></iframe>
+  </section>
+
+  <!-- 🔻 FOOTER -->
+  <footer>
+    <p>© 2026 Radio Estereo Color - Todos los derechos reservados</p>
+  </footer>
+
+</div>
+
+<!-- 🔊 AUDIO OCULTO -->
+<audio id="radioStream">
+  <source src="https://stream.zeno.fm/m1q2mswvmmbvv" type="audio/mpeg">
+</audio>
+
+<!-- 🔥 SCRIPTS (ORDEN IMPORTANTE) -->
 <script type="module" src="firebase.js"></script>
+<script src="player.js"></script>
 
 </body>
 </html>
