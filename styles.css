@@ -1,38 +1,96 @@
 body {
-  margin:0;
-  font-family: Arial;
-  background:#111;
-  color:white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: white;
+
+  /* 🔥 CENTRADO TOTAL */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-header {
-  display:flex;
-  justify-content:space-between;
-  padding:15px;
-  background:#000;
+/* 📦 CONTENEDOR PRINCIPAL TIPO TARJETA */
+.app-container {
+  width: 95%;
+  max-width: 420px;
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
 }
 
-nav a {
-  color:white;
-  margin:0 10px;
-  text-decoration:none;
+/* 🔴 TOP BAR */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #000;
 }
 
+.status {
+  color: red;
+  font-weight: bold;
+}
+
+/* 🎧 PLAYER */
+.player-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+#playBtn {
+  padding: 12px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.now-playing {
+  font-size: 14px;
+  color: #ccc;
+}
+
+#listeners {
+  font-size: 13px;
+  color: #00ff99;
+}
+
+/* 🟡 HERO */
 .hero {
-  text-align:center;
-  padding:40px;
+  padding: 20px;
+  text-align: center;
 }
 
-iframe {
-  width:100%;
-  max-width:600px;
-  height:120px;
-  border:none;
-  margin-top:20px;
+.hero h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
 }
 
-#contador-visitas {
-  margin-top:20px;
-  font-size:18px;
-  color:#00ff99;
+#visitas {
+  margin-top: 10px;
+  color: #00ff99;
+}
+
+/* 💬 CHAT */
+.chat iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* 🔻 FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  color: #777;
+  background: #000;
 }
